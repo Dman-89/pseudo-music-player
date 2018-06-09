@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.android.musicplayer.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/album_background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shade" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/album_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Dark Horse"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit ="marquee_forever"
+        android:scrollHorizontally="true"/>
+
+</com.example.android.musicplayer.SquareRelativeLayout>

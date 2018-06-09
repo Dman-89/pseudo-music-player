@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="If today was your last day"/>
+
+    <TextView
+        android:layout_below="@id/title_textview"
+        android:id="@+id/artist_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Nickelback"/>
+
+    <ImageView
+        android:id="@+id/cover_imageview"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        tools:background="@drawable/nickelback_if_today"/>
+
+</RelativeLayout>

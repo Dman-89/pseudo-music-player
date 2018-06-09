@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/album_pic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        tools:src="@drawable/bt_escm"
+        android:layout_above="@+id/play_btns"
+        android:layout_weight="3"/>
+
+    <TextView
+        style="@style/song"
+        android:id="@+id/details_artist"
+        tools:text="BT"
+        android:textSize="24sp" />
+
+    <TextView
+        style="@style/song"
+        android:id="@+id/details_song_and_album"
+        tools:text="Flaming June (ESCM)"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/play_btns"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/player_play"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            style="@style/btn_fwd_bwd"
+            android:id="@+id/btn_track_back"
+            android:background="@drawable/player_bwd"
+            android:layout_toLeftOf="@id/btn_play"/>
+
+        <Button
+            style="@style/btn_fwd_bwd"
+            android:id="@+id/btn_track_fwd"
+            android:background="@drawable/player_fwd"
+            android:layout_toRightOf="@id/btn_play"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
