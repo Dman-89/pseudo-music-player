@@ -22,14 +22,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // music data creation
-        final ArrayList<Song> songList = new ArrayList<Song>();
+        final ArrayList<Song> songList = new ArrayList<>();
         songList.add(new Song("If Today Was Your Last Day", "Nickelback", "Dark Horse", R.drawable.nickelback_if_today));
         songList.add(new Song("One Day Too Late", "Skillet", "Awake"));
         songList.add(new Song("Hotel California (live)", "Eagles", "Hotel California", R.drawable.hotel_california));
         songList.add(new Song("Туда", "Михей и Джуманджи", "Сука Любовь"));
         songList.add(new Song("Miracle(Above & Beyond remix)", "Ocean Lab"));
-        songList.add(new Song("Ryan", "Eyes Set To Kill", "Broken Frames", R.drawable.brokenframes));
-        songList.add(new Song("Wish You Were Here", "Avril Lavigne", "Goodbye Lullaby", R.drawable.goodbye_lullaby));
+        songList.add(new Song("Ryan", "Eyes Set To Kill", "Broken Frames", R.drawable.broken_frames));
+        songList.add(new Song("Wish You Were Here", "Avril Lavigne", "Goodbye Lullaby", R.drawable.goodbyelullaby));
         songList.add(new Song("Flaming June", "BT", "ESCM", R.drawable.bt_escm));
         songList.add(new Song("Universal Universe", "Ilya Soloviev", "Trance Nation (Mixed By Above & Beyond)"));
         songList.add(new Song("Danza Kuduro", "Don Omar feat. Lucenzo", "Meet The Orphans", R.drawable.meet_the_orphans));
